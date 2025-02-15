@@ -1,0 +1,6 @@
+[[Types of DBMS]]
+[[Data Models]]
+[[RDBMS]]
+[[Normalization]]
+[[Transaction Management]]
+[[SQL]]

@@ -1,4 +1,8 @@
 [
   "templater-obsidian",
-  "obsidian-git"
+  "obsidian-git",
+  "image-converter",
+  "obsidian-linter",
+  "auto-note-mover",
+  "table-editor-obsidian"
 ]

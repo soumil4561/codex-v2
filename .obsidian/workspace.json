@@ -4,11 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "1ea2959b9d419a26",
+        "id": "a8b4da81e3877ee8",
         "type": "tabs",
         "children": [
           {
-            "id": "2b478ced05730cfc",
+            "id": "9f0f51e6ee9011e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OOPS/OOPS-Starter.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OOPS-Starter"
+            }
+          },
+          {
+            "id": "814ef4123322a41c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -21,7 +35,8 @@
               "title": "Welcome"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 294.5
   },
   "right": {
     "id": "c62a0bf77ab828ce",
@@ -160,6 +175,16 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "f766b4bb2d1f0045",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
         ],
         "currentTab": 4
@@ -170,19 +195,64 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
+      "obsidian-git:Open Git source control": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
+      "templater-obsidian:Templater": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "command-palette:Open command palette": false
     }
   },
-  "active": "2b478ced05730cfc",
+  "active": "814ef4123322a41c",
   "lastOpenFiles": [
+    "templates/Notes-Template.md",
+    "Database/DBMS-Starter.md",
+    "Spring/Core Spring/Inversion of Control.md",
+    "Spring/Core Spring/Lifecycle Callbacks.md",
+    "Spring/Core Spring/Spring Core.md",
+    "Spring/Spring Framework.md",
+    "Spring/Spring-Starter.md",
     "Welcome.md",
-    "Welcome.md"
+    "templates/Starter-Template.md",
+    "JavaScript/Core JavaScript/Asynchronous Calls.md",
+    "OOPS/OOPS-Starter.md",
+    "JavaScript/JavaScript-Starter.md",
+    "JavaScript/Core JavaScript/Javascript Core.md",
+    "JavaScript/Core JavaScript/Functions.md",
+    "JavaScript/Interview Questions/JS Interview Questions.md",
+    "JavaScript/Interview Questions/Node.JS Interview Questions.md",
+    "JavaScript/Interview Questions.md",
+    "JavaScript/Core JavaScript",
+    "JavaScript/Core JavaScript/JavaScript Basics.md",
+    "Database/Basic Concepts/Normalization.md",
+    "JavaScript/Interview Questions",
+    "JavaScript/New folder",
+    "JavaScript/Frameworks",
+    "JavaScript",
+    "New folder",
+    "Database/Basic Concepts/Data Models.md",
+    "OOPS/The 4 Pillars.md",
+    "OOPS/attachments/oops_pillars.png",
+    "OOPS/attachments",
+    "OOPS/New folder",
+    "OOPS/OOPS-Intro.md",
+    "OOPS/Constructors.md",
+    "OOPS/OOPS.md",
+    "Database/Basic Concepts/DBMS-Basics.md",
+    "OOPS/The Keywords.md",
+    "OOPS",
+    "Database/Basic Concepts/attachments/Untitled.webp",
+    "Database/Basic Concepts/attachments/Untitled.png",
+    "Database/Basic Concepts/attachments/Untitled.jpeg",
+    "Database/Basic Concepts/attachments/Untitled 15.png",
+    "Database/Basic Concepts/attachments/Untitled 14.png",
+    "Database/Basic Concepts/attachments/Untitled 13.png",
+    "Database/Basic Concepts/attachments/Untitled 12.png",
+    "Database/Basic Concepts/attachments/Untitled 11.png",
+    "Database/Basic Concepts/attachments/Untitled 10.png",
+    "Database/Basic Concepts/attachments"
   ]
 }
