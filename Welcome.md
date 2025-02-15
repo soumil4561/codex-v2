@@ -37,3 +37,4 @@ testing for mobile.
 pc -> mobile
 
 and mac
+mac -> pc
