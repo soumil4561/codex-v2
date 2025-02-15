@@ -35,3 +35,5 @@ Happy exploring!
 
 testing for mobile.
 pc -> mobile
+
+and mac
