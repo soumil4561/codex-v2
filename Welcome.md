@@ -32,3 +32,6 @@ Below is the **index of topics** currently available in **Codex-v2**:
 ---  
 This vault will keep growing as I continue learning.  
 Happy exploring!  
+
+testing for mobile.
+pc -> mobile
