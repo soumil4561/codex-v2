@@ -11,4 +11,6 @@ Understand these core concepts to further understand the spring core:
 [[Inversion of Control]]
 [[Dependency Injection]]
 [[Spring IOC Container]]
-[[Lifecycle Callbacks]]
+[[Bean Lifecycle Callbacks]]
+[[Factory Lifecycle Callbacks]]
+

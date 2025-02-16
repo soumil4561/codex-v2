@@ -10,6 +10,7 @@ tags:
 - [[Annotations]]
 - [[Spring AOP]]
 - [[Spring Boot]]
+- [[Java-Spring Best Practices]]
 
 ## List of Resources
 
