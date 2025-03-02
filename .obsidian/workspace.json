@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9adff4606daf1a8d",
+        "id": "f3ea8bbb48828c7a",
         "type": "tabs",
         "children": [
           {
-            "id": "2ac6aa2b74e93ca5",
+            "id": "efd74786ea656f75",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "TypeScript.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TypeScript"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 225.5
   },
   "right": {
     "id": "c62a0bf77ab828ce",
@@ -163,8 +167,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -177,25 +181,32 @@
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
-      "obsidian-git:Open Git source control": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "templater-obsidian:Templater": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2ac6aa2b74e93ca5",
+  "active": "efd74786ea656f75",
   "lastOpenFiles": [
-    "Spring/Annotations/Annotations.md",
+    "TypeScript.md",
+    "Welcome.md",
+    "TypeScript",
+    "templates/Starter-Template.md",
+    "templates/Notes-Template.md",
+    "Database/NoSQL DBs/MongoDB.md",
+    "JavaScript/Core JavaScript/Asynchronous Calls.md",
+    "Spring/Spring Framework.md",
     "Spring/Spring AOP/Spring AOP.md",
+    "Spring/Annotations/Annotations.md",
     "Spring/Spring-Starter.md",
     "Spring/Spring AOP",
     "Spring/Annotations/Spring Core Annotations.md",
     "Spring/Annotations/Annotations in Java.md",
-    "Spring/Spring Framework.md",
     "Spring/Core Spring/Spring Core.md",
     "Spring/Annotations/Annotations in Spring 1.md",
     "Spring/Core Spring/Factory Lifecycle Callbacks.md",
@@ -208,15 +219,10 @@
     "Spring/Best Practices",
     "Spring/Core Spring/Dependency Injection.md",
     "Spring/Core Spring/Bean Lifecycle Callbacks.md",
-    "JavaScript/Core JavaScript/Asynchronous Calls.md",
-    "Welcome.md",
     "OOPS/OOPS-Starter.md",
-    "templates/Notes-Template.md",
     "Database/DBMS-Starter.md",
-    "templates/Starter-Template.md",
     "JavaScript/JavaScript-Starter.md",
     "JavaScript/Core JavaScript/Javascript Core.md",
-    "JavaScript/Core JavaScript/Functions.md",
     "JavaScript/Core JavaScript",
     "JavaScript/Interview Questions",
     "JavaScript/New folder",
@@ -224,7 +230,6 @@
     "JavaScript",
     "New folder",
     "OOPS/attachments/oops_pillars.png",
-    "OOPS/attachments",
     "Database/Basic Concepts/attachments/Untitled.webp",
     "Database/Basic Concepts/attachments/Untitled.png",
     "Database/Basic Concepts/attachments/Untitled.jpeg",
