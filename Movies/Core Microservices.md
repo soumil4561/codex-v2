@@ -43,3 +43,20 @@
 
 - Enables users to search/filter movies by title, genre, actor, location, date, etc.
 
+
+#### GraphQL (Federated Services):
+
+- User Service
+- Movie Service
+- Schedule Service
+- Theater Service
+- Booking Service
+- Discovery/Search Service
+
+#### REST Services:
+
+- Auth Service
+- Access Control Service
+- Seat Management Service
+- Payment Service
+- Notification Service
