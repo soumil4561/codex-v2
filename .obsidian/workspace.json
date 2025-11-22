@@ -4,81 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "f3ea8bbb48828c7a",
+        "id": "47161899ccaf9124",
         "type": "tabs",
         "children": [
           {
-            "id": "0bd09574d0b92c1c",
+            "id": "924641ee49d2c269",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "SDL/ProtoBuf.md",
-                "mode": "source",
-                "source": false
+                "aFile": "My Arch setup/The Basic Installation.md",
+                "bFile": "My Arch setup/The Basic Installation.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "ProtoBuf"
+              "icon": "diff",
+              "title": "Diff: The Basic Installation"
             }
           },
           {
-            "id": "e0ed0684aa726b16",
+            "id": "2b3d6cc054f31860",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Welcome.md",
+                "file": "Cloud/Google/Professional Cloud Developer Certification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Welcome"
-            }
-          },
-          {
-            "id": "47d30303d89b4182",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Movies/Features.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Features"
-            }
-          },
-          {
-            "id": "d280e340d7a949d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Movies/Features.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Features"
-            }
-          },
-          {
-            "id": "6b0d336ca3f16b1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Movies/Core Microservices.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Core Microservices"
+              "title": "Professional Cloud Developer Certification"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -135,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 225.5,
+    "collapsed": true
   },
   "right": {
     "id": "c62a0bf77ab828ce",
@@ -224,8 +182,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           }
         ],
@@ -237,6 +195,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -248,53 +207,52 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6b0d336ca3f16b1f",
+  "active": "924641ee49d2c269",
   "lastOpenFiles": [
+    "Cloud/Google/attachments/Service Orchestration and Choreography-1763735063200.webp",
+    "Cloud/Google/attachments/Service Orchestration and Choreography-1763734713688.webp",
+    "Cloud/Google/attachments/Service Orchestration and Choreography-1763734216143.webp",
+    "JavaScript/Core JavaScript/Asynchronous Calls.md",
+    "JavaScript/Core JavaScript/JavaScript Basics.md",
+    "My Arch setup/The Basic Installation.md",
+    "Cloud/Google/Professional Cloud Developer Certification.md",
+    "Spring/Best Practices/Untitled.base",
+    "Spring/Best Practices/Coding to Interfaces.md",
+    "Spring/Best Practices/Java-Spring Best Practices.md",
+    "OOPS/The 4 Pillars.md",
+    "OOPS/OOPS-Intro.md",
+    "OOPS/Constructors.md",
+    "Cloud/Google/Service Orchestration and Choreography.md",
+    "Cloud/Google/attachments",
+    "Cloud/Google",
+    "Untitled",
+    "Cloud",
+    "My Arch setup",
+    "SDL/ProtoBuf.md",
+    "Welcome.md",
     "Movies/Features.md",
     "Movies/Core Microservices.md",
     "Movies/Actors.md",
-    "Welcome.md",
     "Movies",
     "Spring/Core Spring/Factory Lifecycle Callbacks.md",
     "Spring/attachments/Pasted image 20250213104500.png",
     "Spring/Spring AOP/Spring AOP.md",
     "SDL/Go Basics.md",
-    "SDL/ProtoBuf.md",
     "Go",
     "SDL/attachments/ProtoBuf-1742033516353.webp",
     "SDL/attachments",
     "SDL/SDL Intro.md",
     "Protocol Buffers",
-    "Untitled 1",
-    "gRPC",
     "SDL/SDL Starter.md",
-    "SDL",
     "TypeScript/TypeScript.md",
-    "TypeScript",
     "templates/Starter-Template.md",
     "templates/Notes-Template.md",
     "Database/NoSQL DBs/MongoDB.md",
-    "JavaScript/Core JavaScript/Asynchronous Calls.md",
     "Spring/Spring Framework.md",
-    "Spring/Annotations/Annotations.md",
-    "Spring/Spring-Starter.md",
-    "Spring/Spring AOP",
-    "Spring/Annotations/Spring Core Annotations.md",
-    "Spring/Annotations/Annotations in Java.md",
-    "Spring/Core Spring/Spring Core.md",
-    "Spring/Annotations/Annotations in Spring 1.md",
-    "Spring/Annotations",
-    "Spring/Core Spring/Inversion of Control.md",
-    "Spring/Core Spring/Untitled.md",
-    "Spring/Best Practices/Coding to Interfaces.md",
-    "Spring/Best Practices/Java-Spring Best Practices.md",
     "OOPS/attachments/oops_pillars.png",
     "Database/Basic Concepts/attachments/Untitled.webp",
     "Database/Basic Concepts/attachments/Untitled.png",
     "Database/Basic Concepts/attachments/Untitled.jpeg",
-    "Database/Basic Concepts/attachments/Untitled 15.png",
-    "Database/Basic Concepts/attachments/Untitled 14.png",
-    "Database/Basic Concepts/attachments/Untitled 13.png",
-    "Database/Basic Concepts/attachments/Untitled 12.png"
+    "Database/Basic Concepts/attachments/Untitled 15.png"
   ]
 }
