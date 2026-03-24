@@ -182,3 +182,7 @@ case *int:
 ```
 
 ## Functions
+- Functions and methods can return multiple values.
+- Improves upon clumsy C idioms:
+    - **In-band error returns:** Eliminates the need for special return values like `-1` for EOF.
+    - **Argument modification:** Eliminates the need to pass addresses to modify arguments for "returning" data.
