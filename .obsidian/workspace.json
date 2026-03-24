@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "47161899ccaf9124",
+        "id": "c1563cb2415c2289",
         "type": "tabs",
         "children": [
           {
-            "id": "924641ee49d2c269",
+            "id": "3240b80f40251314",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
-            }
-          },
-          {
-            "id": "2b3d6cc054f31860",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Google/Professional Cloud Developer Certification.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Professional Cloud Developer Certification"
+              "title": "New tab"
             }
           }
         ]
@@ -67,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Untitled",
+                "query": "GraphQl",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5,
-    "collapsed": true
+    "width": 225.5
   },
   "right": {
     "id": "c62a0bf77ab828ce",
@@ -191,7 +172,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 279.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,14 +188,30 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "924641ee49d2c269",
+  "active": "3240b80f40251314",
   "lastOpenFiles": [
+    "templates/Notes-Template.md",
+    "Go/Go Core.md",
+    "Go/Go Starter.md",
+    "Go/Contexts in Go.md",
+    "JavaScript/JavaScript-Starter.md",
+    "templates/Starter-Template.md",
+    "Welcome.md",
+    "Go",
+    "Finding and ranking similarity between Youtube Metadata and MusicBrainz metadata for efficient selection of best MBID.md",
+    "Auth/Storing and Managing Auth Creds.md",
+    "Auth",
+    "Auth/Users.md",
+    "GraphQL/Graphql.md",
+    "GraphQL",
+    "Untitled 1",
+    "Movies/Core Microservices.md",
+    "My Arch setup/The Basic Installation.md",
     "Cloud/Google/attachments/Service Orchestration and Choreography-1763735063200.webp",
     "Cloud/Google/attachments/Service Orchestration and Choreography-1763734713688.webp",
     "Cloud/Google/attachments/Service Orchestration and Choreography-1763734216143.webp",
     "JavaScript/Core JavaScript/Asynchronous Calls.md",
     "JavaScript/Core JavaScript/JavaScript Basics.md",
-    "My Arch setup/The Basic Installation.md",
     "Cloud/Google/Professional Cloud Developer Certification.md",
     "Spring/Best Practices/Untitled.base",
     "Spring/Best Practices/Coding to Interfaces.md",
@@ -225,30 +222,15 @@
     "Cloud/Google/Service Orchestration and Choreography.md",
     "Cloud/Google/attachments",
     "Cloud/Google",
-    "Untitled",
     "Cloud",
     "My Arch setup",
     "SDL/ProtoBuf.md",
-    "Welcome.md",
     "Movies/Features.md",
-    "Movies/Core Microservices.md",
     "Movies/Actors.md",
     "Movies",
     "Spring/Core Spring/Factory Lifecycle Callbacks.md",
     "Spring/attachments/Pasted image 20250213104500.png",
-    "Spring/Spring AOP/Spring AOP.md",
-    "SDL/Go Basics.md",
-    "Go",
     "SDL/attachments/ProtoBuf-1742033516353.webp",
-    "SDL/attachments",
-    "SDL/SDL Intro.md",
-    "Protocol Buffers",
-    "SDL/SDL Starter.md",
-    "TypeScript/TypeScript.md",
-    "templates/Starter-Template.md",
-    "templates/Notes-Template.md",
-    "Database/NoSQL DBs/MongoDB.md",
-    "Spring/Spring Framework.md",
     "OOPS/attachments/oops_pillars.png",
     "Database/Basic Concepts/attachments/Untitled.webp",
     "Database/Basic Concepts/attachments/Untitled.png",
