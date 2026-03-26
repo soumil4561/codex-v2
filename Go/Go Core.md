@@ -186,3 +186,123 @@ case *int:
 - Improves upon clumsy C idioms:
     - **In-band error returns:** Eliminates the need for special return values like `-1` for EOF.
     - **Argument modification:** Eliminates the need to pass addresses to modify arguments for "returning" data.
+
+### Named result parameters
+- Return parameters can be named and treated as regular variables.
+- Named parameters are initialized to their type's zero value at the start of the function.
+- If a `return` statement has no arguments (naked return), the current values of the named parameters are returned.
+- Names are optional but serve as documentation, clarifying the purpose of each returned value.
+- Using named results can make code shorter and more readable.
+```go
+func ReadFull(r Reader, buf []byte) (n int, err error) {
+    for len(buf) > 0 && err == nil {
+        var nr int
+        nr, err = r.Read(buf)
+        n += nr
+        buf = buf[nr:]
+    }
+    return
+}
+```
+
+### Defer
+Go's `defer` statement schedules a function call (the _deferred_ function) to be run immediately before the function executing the `defer` returns. It's an unusual but effective way to deal with situations such as resources that must be released regardless of which path a function takes to return. The canonical examples are unlocking a mutex or closing a file.
+```go
+// Contents returns the file's contents as a string.
+func Contents(filename string) (string, error) {
+    f, err := os.Open(filename)
+    if err != nil {
+        return "", err
+    }
+    defer f.Close()  // f.Close will run when we're finished.
+
+    var result []byte
+    buf := make([]byte, 100)
+    for {
+        n, err := f.Read(buf[0:])
+        result = append(result, buf[0:n]...) // append is discussed later.
+        if err != nil {
+            if err == io.EOF {
+                break
+            }
+            return "", err  // f will be closed if we return here.
+        }
+    }
+    return string(result), nil // f will be closed if we return here.
+}
+```
+
+
+## Data
+
+### Allocation with new
+- **Allocation Primitives:** Go uses two built-in functions for allocation: `new` and `make`.
+- **The `new` Function:**
+    - Allocates memory for a type `T` but does not initialize it.
+    - Only "zeros" the memory (sets it to the type's zero value).
+    - Returns the address of the allocated storage (a pointer of type `*T`).
+- **Design Philosophy:** Data structures should be designed so their zero value is immediately usable without further initialization.
+- **Usage:** This allows users to create an instance with `new` and begin using it immediately.
+```go
+type SyncedBuffer struct {
+    lock    sync.Mutex
+    buffer  bytes.Buffer
+}
+//Values of type `SyncedBuffer` are also ready to use immediately upon allocation or just declaration. In the next snippet, both `p` and `v` will work correctly without further arrangement.
+p := new(SyncedBuffer)  // type *SyncedBuffer
+var v SyncedBuffer      // type  SyncedBuffer
+```
+
+### Constructors and composite literals
+We can simplify constructor initialisation with composite literal (Sometimes the zero value isn't good enough):
+```go
+f := File{fd, name, nil, 0}
+```
+
+It's perfectly OK to return the address of a local variable; the storage associated with the variable survives after the function returns. In fact, taking the address of a composite literal allocates a fresh instance each time it is evaluated
+```go
+//The fields of a composite literal are laid out in order and must all be present. However, by labeling the elements explicitly as field:value pairs, the initializers can appear in any order
+ return &File{fd: fd, name: name} //the missing ones left as their respective zero values
+```
+
+>As a limiting case, if a composite literal contains no fields at all, it creates a zero value for the type. The expressions `new(File)` and `&File{}` are equivalent.
+
+Composite literals can also be created for arrays, slices, and maps, with the field labels being indices or map keys as appropriate. In these examples, the initialisations work regardless of the values of `Enone`, `Eio`, and `Einval`, as long as they are distinct.
+```go
+a := [...]string   {Enone: "no error", Eio: "Eio", Einval: "invalid argument"}
+s := []string      {Enone: "no error", Eio: "Eio", Einval: "invalid argument"}
+m := map[int]string{Enone: "no error", Eio: "Eio", Einval: "invalid argument"}
+```
+
+### Allocation with make
+- **Scope:** `make` is used exclusively for **slices, maps, and channels**.
+- **Initialization:** Unlike `new` (which only zeros memory), `make` **initializes** the internal data structure and prepares the value for immediate use.
+- **Return Type:** It returns an **initialized value** of type `T`, not a pointer (`*T`).
+- **Underlying Mechanism:** Slices, maps, and channels are descriptors that require internal setup (e.g., pointers to underlying arrays, length, and capacity) to function.
+- **Comparison for Slices:**
+    - `make([]int, 10, 100)`: Allocates a 100-int array and returns a slice structure (length 10, capacity 100) pointing to it.
+    - `new([]int)`: Returns a pointer to a `nil` slice structure; this is rarely useful.
+- **Pointers:** Because `make` returns a value, you must use `new` or the address-of operator (`&`) if an explicit pointer is required.
+
+### Arrays
+Arrays are useful when planning the detailed layout of memory and sometimes can help avoid allocation, but primarily they are a building block for slices. There are major differences between the ways arrays work in Go and C. In Go,
+
+- Arrays are values. Assigning one array to another copies all the elements.
+- In particular, if you pass an array to a function, it will receive a _copy_ of the array, not a pointer to it.
+- The size of an array is part of its type. The types `[10]int` and `[20]int` are distinct.
+
+The value property can be useful but also expensive; if you want C-like behavior and efficiency, you can pass a pointer to the array.
+
+```go
+func Sum(a *[3]float64) (sum float64) {
+    for _, v := range *a {
+        sum += v
+    }
+    return
+}
+array := [...]float64{7.0, 8.5, 9.1}
+x := Sum(&array)  // Note the explicit address-of operator
+```
+
+But even this style isn't idiomatic Go. Use slices instead.
+
